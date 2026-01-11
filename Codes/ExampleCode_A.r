@@ -20,7 +20,6 @@ library("NMA")            # load the "NMA" package
 # 3. Load the illustrative example
 #    Original dataset from: https://doi.org/10.1001/archinternmed.2010.427
 
-data(heartfailure)
 print(heartfailure)
 
 # An arm-based dataset of a network meta-analysis that compared 7 antihypertensive drug classes (AB, ACE, ARB, BB, CCB, DD, CT) and placebo.
@@ -49,9 +48,9 @@ netplot(hf2,text=FALSE)                           # The text can be cancelled.
 
 # 6. Pairwise meta-analysis for all treatment pairs with direct comparisons
 
-pairwise(hf2)            # The pairwise meta-analyses are performed by "rma" and "regtest" functions of "metafor" package.
-pairwise(hf3)
-pairwise(hf4)
+SumPMA(hf2)            # The pairwise meta-analyses are performed by "rma" and "regtest" functions of "metafor" package.
+SumPMA(hf3)
+SumPMA(hf4)
 
 
 
@@ -189,6 +188,7 @@ transitivity(hf2, SBP)
 transitivity(hf2, SBP, yrange=c(100,220))			# Specify the range of y-axis.
 transitivity(hf2, DBP)
 transitivity(hf2, pubyear)	
+
 
 
 
