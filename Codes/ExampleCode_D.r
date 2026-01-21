@@ -50,7 +50,7 @@ netplot(wd4,text=FALSE)                           # The text can be cancelled.
 
 # 6. Pairwise meta-analysis for all treatment pairs with direct comparisons
 
-pairwise(wd4)            # The pairwise meta-analyses are performed by "rma" and "regtest" functions of "metafor" package.
+SumPMA(wd4)            # The pairwise meta-analyses are performed by "rma" and "regtest" functions of "metafor" package.
 
 
 
@@ -138,6 +138,7 @@ nmafunnel(wd4,legends="bottomright")		# Comparison-adjusted funnel plot for plac
 # 17. Contribution weight matrices
 
 nmaweight(wd4)
+
 
 
 
