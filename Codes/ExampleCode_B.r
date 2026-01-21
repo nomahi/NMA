@@ -45,7 +45,7 @@ netplot(ad2,text=FALSE)                           # The text can be cancelled.
 
 # 6. Pairwise meta-analysis for all treatment pairs with direct comparisons
 
-pairwise(ad2)            # The pairwise meta-analyses are performed by "rma" and "regtest" functions of "metafor" package.
+SumPMA(ad2)            # The pairwise meta-analyses are performed by "rma" and "regtest" functions of "metafor" package.
 
 
 
@@ -143,3 +143,4 @@ data(exdataMD)
 print(exdataMD)
 
 trans.armdata(study=id,treat1=treat1,treat2=treat2,n1=n1,n2=n2,y=MD,SE=seMD,measure="MD",data=exdataMD)
+
