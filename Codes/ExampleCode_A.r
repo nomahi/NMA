@@ -89,7 +89,6 @@ nmarank(hf2, ascending=FALSE)                                 # The order can be
 
 nmaleague(hf2)
 nmaleague(hf2, eform=TRUE)                                              # The outputs can be changed to exponential scale by "eform".
-nmaleague(hf2, eform=TRUE, digits=2)                                    # Number of decimal places can be changed by "digits"
 nmaleague(hf2, eform=TRUE, PI=TRUE)                                     # A league table of prediction intervals can be created by setting "PI=TRUE".
 nmaleague(hf2, eform=TRUE, out.csv="nmaleague_out.csv")                 # The outputs can be exported to a CSV file by setting "out.csv='filename'".
 
@@ -188,6 +187,7 @@ transitivity(hf2, SBP)
 transitivity(hf2, SBP, yrange=c(100,220))			# Specify the range of y-axis.
 transitivity(hf2, DBP)
 transitivity(hf2, pubyear)	
+
 
 
 
