@@ -78,7 +78,10 @@ nmareg(hf2,z=c(SBP,DBP),treats=c(3,4,6))
 
 # 9. Creating ranking statistics for network meta-analysis (e.g., SUCRA)
 
+set.seed(123456)
 nmarank(hf2)
+
+set.seed(123456)
 nmarank(hf2, ascending=FALSE)                                 # The order can be inversed by "ascending".
 
 
