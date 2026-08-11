@@ -48,13 +48,8 @@ netplot(wd4,text=FALSE)                           # The text can be cancelled.
 
 
 
-# 6. Pairwise meta-analysis for all treatment pairs with direct comparisons
 
-SumPMA(wd4)            # The pairwise meta-analyses are performed by "rma" and "regtest" functions of "metafor" package.
-
-
-
-# 7. Network meta-analysis with the consistency model
+# 6. Network meta-analysis with the consistency model
 
 nma(wd4)				# Survival probability difference
 nma(wd5,eform=TRUE)		# Hazard ratio
@@ -62,7 +57,7 @@ nma(wd5,eform=TRUE)		# Hazard ratio
 
 
 
-# 8. Creating ranking statistics for network meta-analysis (e.g., SUCRA)
+# 7. Creating ranking statistics for network meta-analysis (e.g., SUCRA)
 
 nmarank(wd4)
 nmarank(wd4, ascending=FALSE)                                 # The order can be inversed by "ascending".
@@ -71,7 +66,7 @@ nmarank(wd4, ascending=FALSE)                                 # The order can be
 
 
 
-# 9. Creating a league table
+# 8. Creating a league table
 
 nmaleague(wd4,eform=TRUE)
 
@@ -79,7 +74,7 @@ nmaleague(wd4,eform=TRUE)
 
 
 
-# 10. Ranked forest plot
+# 9. Ranked forest plot
 
 nmaforest(wd4, col.plot="blue")                               # The color can be changed.
 
@@ -88,7 +83,7 @@ nmaforest(wd4, col.plot="blue")                               # The color can be
 		
 		
 
-# 11. Local inconsistency tests for all poissible closed loops (generalized Bucher's test)
+# 10. Local inconsistency tests for all poissible closed loops (generalized Bucher's test)
 
 local.ict(wd4)
 
@@ -96,7 +91,7 @@ local.ict(wd4)
 
 
 
-# 12. Higgins' global inconsistency test based on the design-by-treatment interaction model
+# 11. Higgins' global inconsistency test based on the design-by-treatment interaction model
 
 global.ict(wd4)
 
@@ -104,7 +99,7 @@ global.ict(wd4)
 
 
 
-# 13. Q-statistic and its factorization
+# 12. Q-statistic and its factorization
 
 nmaQ(wd4)
 
@@ -112,7 +107,7 @@ nmaQ(wd4)
 
 
 
-# 14. Noma's side-splitting
+# 13. Noma's side-splitting
 
 sidesplit(wd4)
 
@@ -120,14 +115,14 @@ sidesplit(wd4)
 
 
 
-# 15. Jackson's random inconsistency model
+# 14. Jackson's random inconsistency model
 
 random.icm(wd4)
 
 
 
 
-# 16. Comparison-adjusted funnel plot
+# 15. Comparison-adjusted funnel plot
 
 nmafunnel(wd4,legends="bottomright")		# Comparison-adjusted funnel plot for placebo-controlled trials
 
@@ -135,7 +130,7 @@ nmafunnel(wd4,legends="bottomright")		# Comparison-adjusted funnel plot for plac
 
 
 
-# 17. Contribution weight matrices
+# 16. Contribution weight matrices
 
 nmaweight(wd4)
 
