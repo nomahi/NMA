@@ -15,4 +15,4 @@ The "Codes" directory includes the following files:
 ---
 
 **References**:  
-Noma, H., Maruo, K., Tanaka, S., and Furukawa, T. A. (2025). NMA: Network meta-analysis based on multivariate meta-analysis and meta-regression models in R. medRxiv, doi: https://doi.org/10.1101/2025.09.15.25335823
+Noma, H., Maruo, K., Tanaka, S., and Furukawa, T. A. (2026). NMA: Network meta-analysis based on multivariate meta-analysis and meta-regression models in R. Research Synthesis Methods, doi: [https://doi.org/10.1101/2025.09.15.25335823](https://doi.org/10.1017/rsm.2026.10122)
